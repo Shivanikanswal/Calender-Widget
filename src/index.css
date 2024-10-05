@@ -1,13 +1,124 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.calendar {
+  width: auto;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: absolute;
+  top: 141px;
+  left: 500px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: 1px solid #cdcaca;
+  margin-bottom: 12px;
+}
+
+.week-days > span {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.day-cell.weekend {
+  color: #db2828;
+}
+
+.button-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-actions button:hover {
+  background-color: #0056b3;
+}
+
+.header select {
+  padding: 8px 24px 8px 24px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.header > span {
+  padding-left: 12px;
+  font-size: large;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.day-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.day-cell.selected {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.day-cell.selected:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.day-cell:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
 }
