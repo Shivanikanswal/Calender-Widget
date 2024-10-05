@@ -17,3 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
    * Current date or selected dates are highlighted in "blue" and weekends in "red".
    * Added a date selection feature where clicking a day highlights it as the selected date.
 
+![image](https://github.com/user-attachments/assets/29c9b576-bccc-44c2-a608-a32b710e1880)
+
+
+
