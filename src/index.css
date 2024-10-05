@@ -122,3 +122,11 @@ body {
   background-color: #ddd;
   transform: scale(1.05);
 }
+
+.selected-date-display {
+  top: 77px;
+  position: relative;
+  font-size: larger;
+  font-weight: 700;
+  text-decoration: underline;
+}

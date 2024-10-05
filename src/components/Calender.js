@@ -49,7 +49,6 @@ function Calendar() {
         onPrevious={handlePreviousMonth}
         onNext={handleNextMonth}
       />
-      {/* <p>Selected Date: {selectedDate.toDateString()}</p> */}
     </div>
   );
 }

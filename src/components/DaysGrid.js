@@ -52,6 +52,9 @@ function DaysGrid({
           Next
         </button>
       </div>
+      <p className="selected-date-display">
+        Selected Date: {selectedDate.toDateString()}
+      </p>
     </>
   );
 }
